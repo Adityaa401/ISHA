@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import confetti from 'canvas-confetti';
-import bgVideo from './assets/2.mp4'; // Adjust path if needed
+import bgVideo from './assets/2.webm'; // Adjust path if needed
 
 const LastPage = () => {
   useEffect(() => {
@@ -30,13 +30,14 @@ const LastPage = () => {
     <div className="relative w-full h-screen overflow-hidden flex items-center justify-center">
       {/* Background Video */}
       <video
+        preload="auto"
         autoPlay
         loop
         muted
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
       >
-        <source src={bgVideo} type="video/mp4" />
+        <source src={bgVideo} type="video/webm" />
         Your browser does not support the video tag.
       </video>
 

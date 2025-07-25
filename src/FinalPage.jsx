@@ -1,4 +1,4 @@
-import bgVideo from './assets/5.mp4';
+import bgVideo from './assets/5.webm';
 import './index.css'
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
@@ -173,13 +173,14 @@ const FinalPage = () => {
     <div className="relative w-full h-screen overflow-hidden">
       {/* Background Video */}
       <video
+        preload="auto"
         autoPlay
         loop
         muted
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
       >
-        <source src={bgVideo} type="video/mp4" />
+        <source src={bgVideo} type="video/webm" />
         Your browser does not support the video tag.
       </video>
       <div className="fixed top-0 left-0 w-full p-4 z-10 flex justify-center animate-slideDown">

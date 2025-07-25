@@ -150,7 +150,7 @@ const FixedCornerIshuus = () => {
 
       {/* Bottom-Left ISHUU */}
       <motion.div
-        className="absolute bottom-10 left-10 z-20"
+        className="absolute bottom-20 left-10 z-20"
         animate={{ y: [0, bottomLeft.bounce?.distance || 20, 0] }}
         transition={{
           repeat: Infinity,

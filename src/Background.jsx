@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence} from 'framer-motion';
-import bgVideo from './assets/5.mp4';
+import bgVideo from './assets/5.webm';
 import { useNavigate } from 'react-router-dom';
 import './index.css'
 
@@ -209,13 +209,14 @@ const BackgroundVideo = () => {
       
       {/* Background Video */}
       <video
+        preload="auto"
         autoPlay
         loop
         muted
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
       >
-        <source src={bgVideo} type="video/mp4" />
+        <source src={bgVideo} type="video/webm" />
         Your browser does not support the video tag.
       </video>
       <motion.div

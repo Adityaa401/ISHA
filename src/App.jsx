@@ -1,4 +1,4 @@
-
+import BackgroundVideo from './Background'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LoveNote from './NextPage';
 import FinalPage from './FinalPage';
